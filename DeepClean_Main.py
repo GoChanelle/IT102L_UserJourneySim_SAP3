@@ -30,7 +30,7 @@ menu = st.session_state.menu
 if menu == "Introduction":
     st.caption("This is where the game would start")
 
-    col1 = st.columns(1, border=True)
+    col1 = st.columns(1, border=True)[0]
     col1.write("Test")
 
 elif menu == "Load Game":
