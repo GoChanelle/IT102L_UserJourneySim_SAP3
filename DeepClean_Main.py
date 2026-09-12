@@ -18,6 +18,9 @@ st.divider()
 
 options = ["New Game", "Load Game", "Settings"]
 
+if "menu" not in st.session_state:
+    st.session_state.menu = options[0]  # default to "New Game"
+
 for option in options:
     button_type = "primary" if st.session_state.menu == option else "secondary"
     if st.sidebar.button(option, use_container_width=True, type=button_type):
