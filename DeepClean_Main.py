@@ -25,7 +25,7 @@ st.image(
     caption = "Great Lake (Limbus Company - Canto V)")
 
 st.title("Deep Sea Cleaning")
-st.subtitle("The sea is in shambles.")
+st.subheader("The sea is in shambles.")
 st.caption("Rough simulation for IT102L Exam")
 st.divider()
 
