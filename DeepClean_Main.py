@@ -10,6 +10,9 @@ st.set_page_config(
   layout="wide"
 )
 
+if "gear" not in st.session_state:
+    st.session_state.gear = Gear()
+
 # PAGE TITLE ------------------------------------------------------------
 
 st.title("Deep Sea Cleaning")
