@@ -40,7 +40,7 @@ if menu == "Introduction":
     check_mirror()
     check_outside()
 
-    
+# CHECK / REPLACE GEAR -----------------------------------------------------   
 
-elif menu == "Load Game":
-    st.write("This is a simulated experience. You cannot load any previous attempts ):")
+elif menu == "Check Gear":
+    st.caption("This is how you would check your gear for damages and repairs.")
