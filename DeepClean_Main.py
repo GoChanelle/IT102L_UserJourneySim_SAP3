@@ -28,7 +28,8 @@ for option in options:
 menu = st.session_state.menu
 
 if menu == "New Game":
-    st.write("This is where the game would start")
+    st.image("blob:https://www.messenger.com/c25bae2c-236e-404c-a2d4-2ec46a1bab60")
+    st.caption("This is where the game would start")
 
 elif menu == "Load Game":
     st.write("This is a simulated experience. You cannot load any previous attempts ):")
