@@ -1,8 +1,7 @@
 import streamlit as st
 
-from DeepClean_Intro import show_introduction
-from DeepClean_Intro import check_mirror
-from DeepClean_Intro import check_outside
+from DeepClean_Intro import show_introduction, check_mirror, check_outside
+from DeepClean_Gear import Gear
 
 # PAGE CONFIG -----------------------------------------------------------
 st.set_page_config(
