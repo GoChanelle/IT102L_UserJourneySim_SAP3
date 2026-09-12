@@ -1,6 +1,15 @@
-from DeepClean_CreatureInfo import Creature
+from DeepClean_CreatureInfo import display_info
+import get_total
 
-creature1 = Creature("Bag", "Oxygen Depletion", 90)
-creature2 = Creature("Plastic Ring ", "Oxygen Depletion", 60)
+product1 = Product("Juice", 40, 5)
+product2 = Product("Chips", 50, 3)
 
-creature1.display_info()
+print("PRODUCT 1")
+print(product1.display_info)
+print(f"Total: P", product1.get_total)
+print()
+
+print("PRODUCT 2")
+print(product2.display_info)
+print(f"Total: P", product2.get_total)
+print()
