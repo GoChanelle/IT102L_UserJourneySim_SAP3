@@ -36,8 +36,9 @@ if menu == "Introduction":
     st.caption("This is where the game would start")
 
     show_introduction()
-
     st.divider()
+    check_mirror()
+    check_outside()
 
     
 
