@@ -13,12 +13,6 @@ def show_introduction():
     col3.write("Your job is to maintain the Trash Beasts for a hopefully better future."
                " Goodluck, :red[Don't Drown].")
 
-def check_mirror():
-    if "show_mirror" not in st.session_state:
-            st.session_state.show_mirror = False
-    
-    if st.button("Check Mirror", width="stretch"):
-                st.session_state.show_mirror = not st.session_state.show_mirror
     
     def check_mirror():
         if "show_mirror" not in st.session_state:
