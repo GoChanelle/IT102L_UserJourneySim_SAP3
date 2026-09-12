@@ -43,7 +43,17 @@ if menu == "Introduction":
 
     col3 = st.columns(1, border=True)[0]
     col3.write("Your job is to maintain the Trash Beasts for a hopefully better future."
-                   " Goodluck, :red[Don't Drown].")
+               " Goodluck, :red[Don't Drown].")
+
+    if "show_mirror" not in st.session_state:
+        st.session_state.show_mirror = False
+
+    if st.button("Check Mirror"):
+            st.session_state.show_mirror = not st.session_state.show_mirror
+
+    if st.session_state.show_mirror:
+        col4 = st.columns(1, border=True)[0]
+        col4.write("Your already wearing your full diving gear. It's heavy")
 
 elif menu == "Load Game":
     st.write("This is a simulated experience. You cannot load any previous attempts ):")
