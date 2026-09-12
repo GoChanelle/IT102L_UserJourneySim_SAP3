@@ -16,8 +16,16 @@ st.subheader("The sea is in shambles.")
 st.caption("Rough simulation for IT102L Exam")
 st.divider()
 
-creature1 = Creature(
-    "Bag", "Mistaken for sustenance", "Oxygen Depletion", 90
-    )
+options = ["New Game", "Load Game", "Settings"]
 
-creature1.display_info()
+for option in options:
+    button_type = "primary" if st.session_state.menu == option else "secondary"
+    if st.sidebar.button(option, use_container_width=True, type=button_type):
+        st.session_state.menu = option
+menu = st.session_state.menu
+
+if menu == "New Game":
+    st.write("This is where the game would start")
+
+elif menu == "Load Game":
+    st.write("This is a simulated experience. You cannot load any previous attempts ):")
