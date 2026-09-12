@@ -42,7 +42,7 @@ def check_outside():
                    st.session_state.show_outside = False
            
     if st.button("Check Outside", width="stretch"):
-                       st.session_state.show_outside = not st.session_state.show_mirror
+                       st.session_state.show_outside = not st.session_state.show_outside
            
     if st.session_state.show_outside:
                    col6 = st.columns(1, border=True)[0]
