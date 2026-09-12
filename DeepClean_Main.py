@@ -1,5 +1,4 @@
-from DeepClean_CreatureInfo import display_info
-import get_total
+from DeepClean_CreatureInfo import Product
 
 product1 = Product("Juice", 40, 5)
 product2 = Product("Chips", 50, 3)
