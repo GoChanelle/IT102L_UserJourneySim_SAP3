@@ -16,7 +16,7 @@ st.subheader("The sea is in shambles.")
 st.caption("Rough simulation for IT102L Exam")
 st.divider()
 
-options = ["New Game", "Load Game", "Settings"]
+options = ["Introduction", "Check Gear", "Dive", "Creature Index"]
 
 if "menu" not in st.session_state:
     st.session_state.menu = options[0]  # default to "New Game"
@@ -27,9 +27,11 @@ for option in options:
         st.session_state.menu = option
 menu = st.session_state.menu
 
-if menu == "New Game":
-    st.image("blob:https://www.messenger.com/c25bae2c-236e-404c-a2d4-2ec46a1bab60")
+if menu == "Introduction":
     st.caption("This is where the game would start")
+
+    col1 = st.columns(1, border=True)
+    col1.write("Test")
 
 elif menu == "Load Game":
     st.write("This is a simulated experience. You cannot load any previous attempts ):")
