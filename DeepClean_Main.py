@@ -40,7 +40,7 @@ if menu == "Introduction":
     if "show_mirror" not in st.session_state:
         st.session_state.show_mirror = False
 
-    if st.button("Check Mirror"):
+    if st.button("Check Mirror", width="wide"):
             st.session_state.show_mirror = not st.session_state.show_mirror
 
     if st.session_state.show_mirror:
