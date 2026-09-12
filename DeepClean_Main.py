@@ -1,6 +1,6 @@
 import streamlit as st
 
-from DeepClean_Intro import show_intro()
+from DeepClean_Intro import show_introduction
 
 # PAGE CONFIG -----------------------------------------------------------
 st.set_page_config(
