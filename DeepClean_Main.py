@@ -10,19 +10,19 @@ st.set_page_config(
 )
 
 # PAGE TITLE ------------------------------------------------------------
-st.markdown("""
+background_image = """
 <style>
-div[data-testid="stImage"] img {
-    height: 180px;
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
+[data-testid="stAppViewContainer"] > .main {
+    background-image: url("https://static.wikia.nocookie.net/limbuscompany/images/e/e2/Story_boat_cloudy2.png/revision/latest/scale-to-width-down/985?cb=20231120093636");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: local;
 }
 </style>
-""", unsafe_allow_html=True)
-st.image(
-    "https://static.wikia.nocookie.net/limbuscompany/images/e/e2/Story_boat_cloudy2.png/revision/latest/scale-to-width-down/985?cb=20231120093636",
-    caption = "Great Lake (Limbus Company - Canto V)")
+"""
+
+st.html(background_image)
 
 st.title("Deep Sea Cleaning")
 st.subheader("The sea is in shambles.")
