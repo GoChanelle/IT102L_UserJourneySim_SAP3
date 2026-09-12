@@ -1,13 +1,13 @@
-class Product:
-    def __init__(self, name, price, quantity):
+class Creature:
+    def __init__(self, name, overview, effect, score):
         self.name = name
-        self.price = price
-        self.quantity = quantity
+        self.overview = overview
+        self.effect = effect
+        self.score = score
         
     def display_info(self):
-        print("Product:", self.name)
-        print(f"Price: P", self.price)
-        print("Quantity:", self.quantity)
+        print("Creature Name:", self.name)
+        print("Overview", self.overview)
+        print("Effect:", self.effect)
+        print("Worth:", self.score)
         
-    def get_total(self):
-        return self.price * self.quantity
