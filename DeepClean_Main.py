@@ -1,6 +1,6 @@
 import streamlit as st
 
-from DeepClean_CreatureInfo import Creature
+from DeepClean_Intro import show_intro()
 
 # PAGE CONFIG -----------------------------------------------------------
 st.set_page_config(
@@ -33,17 +33,9 @@ menu = st.session_state.menu
 if menu == "Introduction":
     st.caption("This is where the game would start")
 
-    col1 = st.columns(1, border=True)[0]
-    col1.write("It's the year 20xx. Less of the world is becoming inhabitable."
-               " The air around the coastline is thick and the waters are dangerous.")
+    show_introduction()
 
-    col2 = st.columns(1, border=True)[0]
-    col2.write("The coastline is prohibited to anyone who isn't a Diver."
-               " Unfortunately, you are a :red[Diver].")
-
-    col3 = st.columns(1, border=True)[0]
-    col3.write("Your job is to maintain the Trash Beasts for a hopefully better future."
-               " Goodluck, :red[Don't Drown].")
+    st.divider()
 
     if "show_mirror" not in st.session_state:
         st.session_state.show_mirror = False
