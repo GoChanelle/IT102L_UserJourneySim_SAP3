@@ -31,7 +31,12 @@ if menu == "Introduction":
     st.caption("This is where the game would start")
 
     col1 = st.columns(1, border=True)[0]
-    col1.write("Test")
+    col1.write("It's the year 20xx. Less of the world is becoming inhabitable.\n"
+               "The air around the coastline is thick and the waters are dangerous.")
+
+    col2 = st.columns(1, border=True)[0]
+    col2.write("The coastline is prohibited to anyone who isn't a Diver.\n"
+               "Unfortunately, you are a :red[Diver].")
 
 elif menu == "Load Game":
     st.write("This is a simulated experience. You cannot load any previous attempts ):")
