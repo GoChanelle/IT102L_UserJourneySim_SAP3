@@ -15,7 +15,7 @@ def repair_station():
             if col2.button("Repair", key=f"repair_{item}"):
                 msg = gear.repair_gear(item)
                 st.success(msg)
-                st.rerun()   # refresh so status updates immediately
+                st.rerun()
         else:
             col2.write("✅")
 
