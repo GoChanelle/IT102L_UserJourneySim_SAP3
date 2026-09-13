@@ -1,7 +1,7 @@
 import streamlit as st
 
 from DeepClean_Intro import show_introduction, check_mirror, check_outside
-from DeepClean_CheckGear import repair_station, gear_shop
+from DeepClean_GearCheck import repair_station, gear_shop
 from DeepClean_Gear import Gear
 
 # PAGE CONFIG -----------------------------------------------------------
