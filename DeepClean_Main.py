@@ -21,7 +21,7 @@ if "creatures" not in st.session_state:
     st.session_state.creatures = CreatureCollection()
 
 # PAGE TITLE ------------------------------------------------------------
-st.image("https://static.wikia.nocookie.net/limbuscompany/images/e/e2/Story_boat_cloudy2.png/revision/latest/scale-to-width-down/985?cb=20231120093636", 
+st.image("https://static.wikia.nocookie.net/limbuscompany/images/a/ae/Chapter5_Begin.png/revision/latest?cb=20231119033533", 
 caption="Limbus Company Canto V - The Great Lake", 
 use_container_width=True)
 
