@@ -4,8 +4,8 @@ class CreatureCollection:
         self.creatures = {
             "Oil Specter": {"description": "Elusive and shiny. :red[But being near makes you choke.]", "collected": False},
             "Cigar Filters": {"description": "Small yet many. :red[It's hard to see when a hoard is near.]", "collected": False},
-            "Film Wrapper": {"description": "Drifts with purpose. :red[They'll choke you out.].", "collected": False},
-            "Fishing Gear": {"description": "There is fishing gear here? :red[Those hooks look like they hurt.].", "collected": False},
+            "Film Wrapper": {"description": "Drifts with purpose. :red[They'll choke you out.]", "collected": False},
+            "Fishing Gear": {"description": "There is fishing gear here? :red[Those hooks look like they hurt.]", "collected": False},
             "Pallid Whale": {"description": "Heaps of trash that turn into an amalgamation. :red[The infection spreads.]", "collected": False},
         }
 
