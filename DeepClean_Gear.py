@@ -1,7 +1,6 @@
 class Gear:
     def __init__(self):
         self.diving_gear = ["Oxygen Tank", "Diving Mask", "Flippers", "Wetsuit"]
-
         self.gear_status = {
             "Oxygen Tank": "Working",
             "Diving Mask": "Working",
@@ -17,19 +16,16 @@ class Gear:
             print(f"{gear}: {self.gear_status[gear]}")
 
     def buy_gear(self, gear_name):
-        for item in self.diving_gear:
-            if item["name"] == gear_name:
-                return f"{gear_name} is already in your inventory."
-
-        self.diving_gear.append({"name": gear_name, "status": "Working"})
+        if gear_name in self.diving_gear:
+            return f"{gear_name} is already in your inventory."
+        self.diving_gear.append(gear_name)
+        self.gear_status[gear_name] = "Working"
         return f"You bought {gear_name}!"
 
     def repair_gear(self, gear_name):
-        for item in self.diving_gear:
-            if item["name"] == gear_name:
-                if item["status"] == "Broken":
-                    item["status"] = "Working"
-                    return f"{gear_name} has been repaired."
-                else:
-                    return f"{gear_name} is already working."
-        return f"You don't own {gear_name}."
+        if gear_name not in self.diving_gear:
+            return f"You don't own {gear_name}."
+        if self.gear_status[gear_name] == "Broken":
+            self.gear_status[gear_name] = "Working"
+            return f"{gear_name} has been repaired."
+        return f"{gear_name} is already working."
