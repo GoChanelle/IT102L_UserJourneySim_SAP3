@@ -1,5 +1,6 @@
 class CreatureCollection:
     def __init__(self):
+        # Master list of all creatures in the game
         self.creatures = {
             "Clownfish": {"description": "Small, orange, hides in anemones.", "collected": False},
             "Sea Turtle": {"description": "Ancient wanderer of the reef.", "collected": False},
@@ -13,11 +14,14 @@ class CreatureCollection:
         return self.creatures
 
     def get_uncollected(self):
+        """Return only creatures not yet collected — used for Dive encounters."""
         return [name for name, info in self.creatures.items() if not info["collected"]]
 
     def get_collected(self):
+        """Return only creatures already collected — used for the Index."""
         return [name for name, info in self.creatures.items() if info["collected"]]
 
+    def collect(self, name):
         """Mark a creature as collected."""
         if name not in self.creatures:
             return f"{name} isn't a known creature."
@@ -28,4 +32,3 @@ class CreatureCollection:
 
     def is_collected(self, name):
         return self.creatures.get(name, {}).get("collected", False)
-        
