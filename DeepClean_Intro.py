@@ -41,3 +41,4 @@ def check_outside():
     if st.session_state.show_outside:
                    col6 = st.columns(1, border=True)[0]
                    col6.write("A heavy fogs settles on the coastline. The sea is bubbling with energy.")
+                   st.image("https://static.wikia.nocookie.net/limbuscompany/images/e/e2/Story_boat_cloudy2.png/revision/latest/scale-to-width-down/985?cb=20231120093636")
