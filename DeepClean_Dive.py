@@ -3,13 +3,15 @@ import streamlit as st
 
 
 def dive_screen():
-    st.subheader("Dive")
+    col1 = st.columns(1, border=True)[0]
+    col1.write("The water looks thick. You almost topple over at the force of the waves crashing.")
+    col1.write("You can't really back out now. So, when you are ready...")
     creatures = st.session_state.creatures
 
     if "current_encounter" not in st.session_state:
         st.session_state.current_encounter = None
 
-    if st.button("Dive In", width="stretch"):
+    if st.button(":red[Dive In]", width="stretch"):
         uncollected = creatures.get_uncollected()
         if uncollected:
             st.session_state.current_encounter = random.choice(uncollected)
