@@ -22,9 +22,11 @@ if "creatures" not in st.session_state:
 
 # PAGE TITLE ------------------------------------------------------------
 
-st.title("Deep Sea Cleaning")
-st.subheader("The sea is in shambles.")
-st.caption("Rough simulation for IT102L Exam")
+col1, col2, col3 = st.columns([1, 2, 1])
+with col2:
+    st.title("Deep Sea Cleaning")
+    st.subheader("The sea is in shambles.")
+    st.caption("Rough simulation for IT102L Exam")
 st.divider()
 
 # MENU OPTIONS -----------------------------------------------------------

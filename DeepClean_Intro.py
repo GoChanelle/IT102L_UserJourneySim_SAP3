@@ -11,7 +11,7 @@ def show_introduction():
 
     col3 = st.columns(1, border=True)[0]
     col3.write("Your job is to maintain the Trash Beasts for a hopefully better future."
-               " Goodluck, :red[Don't Drown].")
+               " Goodluck. :red[Don't Drown].")
 
     
 def check_mirror():
