@@ -2,6 +2,7 @@ import streamlit as st
 
 from DeepClean_Intro import show_introduction, check_mirror, check_outside
 from DeepClean_Gear import Gear
+from DeepClean_Shop import repair_station, gear_shop
 
 # PAGE CONFIG -----------------------------------------------------------
 st.set_page_config(
@@ -46,3 +47,7 @@ if menu == "Introduction":
 
 elif menu == "Check Gear":
     st.caption("This is how you would check your gear for damages and repairs.")
+
+    repair_station()
+    st.divider()
+    gear_shop()
