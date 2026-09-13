@@ -5,7 +5,7 @@ from DeepClean_GearCheck import repair_station, gear_shop
 from DeepClean_Gear import Gear
 from DeepClean_Creatures import CreatureCollection
 from DeepClean_Dive import dive_screen
-from DeepClean_CreatureIdex import creature_index 
+from DeepClean_CreatureIndex import creature_index 
 
 # PAGE CONFIG -----------------------------------------------------------
 st.set_page_config(
