@@ -25,7 +25,7 @@ def gear_shop():
     st.subheader("Gear Shop")
     gear = st.session_state.gear
 
-    available_to_buy = ["Extra Oxygen Tank", "Spare Flippers", "Backup Mask"]
+    available_to_buy = ["Extra Oxygen Tank", "Spare Flippers", "Backup Mask", "Harpoon", "Extra Inventory"]
 
     for item_name in available_to_buy:
         already_owned = item_name in gear.gear_inventory()
