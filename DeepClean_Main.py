@@ -3,6 +3,9 @@ import streamlit as st
 from DeepClean_Intro import show_introduction, check_mirror, check_outside
 from DeepClean_GearCheck import repair_station, gear_shop
 from DeepClean_Gear import Gear
+from DeepClean_Creatures import CreatureCollection
+from DeepClean_Dive import dive_screen
+from DeepClean_CreatureIdex import creature_index 
 
 # PAGE CONFIG -----------------------------------------------------------
 st.set_page_config(
@@ -13,6 +16,9 @@ st.set_page_config(
 
 if "gear" not in st.session_state:
     st.session_state.gear = Gear()
+
+if "creatures" not in st.session_state:
+    st.session_state.creatures = CreatureCollection()
 
 # PAGE TITLE ------------------------------------------------------------
 
@@ -51,3 +57,11 @@ elif menu == "Check Gear":
     repair_station()
     st.divider()
     gear_shop()
+
+# COLLECT CREATURES ---------------------------------------------------------
+elif menu == "Dive":
+    dive_screen()
+
+# CREATURE INDEX -------------------------------------------------------------
+elif menu == "Creature Index":
+    creature_index()
