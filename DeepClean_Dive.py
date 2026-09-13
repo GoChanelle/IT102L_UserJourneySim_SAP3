@@ -17,14 +17,13 @@ def dive_screen():
             st.session_state.current_encounter = random.choice(uncollected)
         else:
             st.session_state.current_encounter = None
-            st.info("You've collected every creature in the sea!")
+            st.info("Is the sea finally clean..?")
 
     encounter = st.session_state.current_encounter
     if encounter:
         info = creatures.get_all()[encounter]
         col1 = st.columns(1, border=True)[0]
-        col1.write(f"A wild **{encounter}** appears!")
-        col1.write(info["description"])
+        col1.write(f"You spot a **{encounter}**.")
 
         if col1.button(f"Collect {encounter}"):
             msg = creatures.collect(encounter)
