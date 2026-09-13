@@ -23,6 +23,7 @@ def check_mirror():
 
     if st.session_state.show_mirror:
         col4 = st.columns(1, border=True)[0]
+        col4.write("Your eyebags are heavy. You won't see it under the mask.")
         col4.write("You check your gear in the mirror...")
 
         gear = st.session_state.gear
